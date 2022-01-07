@@ -5,13 +5,13 @@ export type Employee = {
   address: string;
   phone: string;
 };
-export enum EmployeeActions {
+export enum EmployeeActionType {
   ADD_EMPLOYEE,
   EDIT_EMPLOYEE,
   DELETE_EMPLOYEE,
 }
 export type EmployeeAction = {
-  type: EmployeeActions;
+  type: EmployeeActionType;
   employee: Employee;
 };
 export type EmployeeState = {
